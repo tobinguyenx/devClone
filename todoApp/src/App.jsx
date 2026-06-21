@@ -11,6 +11,14 @@ function App() {
   return (
     <div>
       <h1>My todos</h1>
+      <ul>
+        {todos.map((data) => (
+          <li key={data.id}>
+            <h3>{data.name}</h3>
+            <p>{data.description}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
